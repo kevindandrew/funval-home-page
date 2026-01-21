@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #f5c553;
+  --color-brand-blue: #1a468d;
+  --color-brand-dark: #0f172a;
+  --color-background-light: #f8fafc;
+  --color-background-dark: #020617;
+
+  --font-display: Montserrat, sans-serif;
+  --font-sans: Inter, sans-serif;
+
+  --radius-lg: 0.5rem;
+}
+
+html.dark .icon-moon {
+  display: none;
+}
+html.dark .icon-sun {
+  display: block;
+}
+html:not(.dark) .icon-moon {
+  display: block;
+}
+html:not(.dark) .icon-sun {
+  display: none;
+}
+
+@layer components {
+  .btn-shadow {
+    @apply shadow-md hover:shadow-lg transition-shadow duration-300;
+  }
+  .glass-nav {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  .dark .glass-nav {
+    background-color: rgba(15, 23, 42, 0.85);
+  }
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    );
+  }
+  .hover-card:hover {
+    transform: translateY(-4px);
+    transition: transform 0.2s ease-out;
+  }
+}
