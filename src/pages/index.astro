@@ -115,7 +115,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <div class="md:hidden flex items-center">
-            <button class="p-2">
+            <button class="p-2" id="mobile-menu-btn">
               <span
                 class="material-symbols-outlined text-slate-600 dark:text-slate-300"
                 >menu</span
@@ -124,9 +124,38 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
       </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 absolute top-full left-0 right-0 shadow-lg"
+      >
+        <div class="px-4 pt-2 pb-4 space-y-1">
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+            >Inicio</a
+          >
+          <a
+            href="https://www.estudiantefunval.org/"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+            >Área Técnica</a
+          >
+          <a
+            href="https://www.estudiantefunval.org/"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+            >Área de Inglés</a
+          >
+          <a
+            href="https://www.estudiantefunval.org/"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+            >Área de Programación</a
+          >
+        </div>
+      </div>
     </div>
   </nav>
-  <header class="relative h-screen flex items-center pt-20 overflow-hidden">
+  <header
+    class="relative min-h-screen flex items-center pt-48 pb-32 md:py-32 overflow-hidden"
+  >
     <div class="absolute inset-0 z-0">
       <img
         alt="Estudiantes en un salón de clases"
@@ -139,7 +168,7 @@ import Layout from "../layouts/Layout.astro";
       class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white"
     >
       <h1
-        class="text-5xl md:text-7xl lg:text-8xl font-display font-extrabold mb-6 tracking-tight"
+        class="text-4xl md:text-7xl lg:text-8xl font-display font-extrabold mb-6 tracking-tight"
         data-aos="fade-up"
       >
         CAMBIANDO VIDAS
@@ -153,19 +182,19 @@ import Layout from "../layouts/Layout.astro";
         oportunidades reales de inserción laboral.
       </p>
       <div
-        class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
         data-aos="fade-up"
         data-aos-delay="200"
       >
         <a
-          class="w-full sm:w-auto px-10 py-5 bg-primary text-brand-dark rounded-lg font-extrabold text-lg btn-shadow hover:scale-[1.02] active:scale-95 transition-all"
+          class="w-full sm:w-auto px-10 py-5 bg-primary text-brand-dark rounded-lg font-extrabold text-lg btn-shadow hover:scale-[1.02] active:scale-95 transition-all text-center"
           href="https://funvalinternacional.org/preinscription-reference"
         >
           PREINSCRIPCIONES
         </a>
-        <div class="flex gap-4 w-full sm:w-auto">
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <a
-            class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-8 py-5 bg-brand-blue/90 border border-white/20 text-white rounded-lg font-bold text-lg hover:bg-brand-blue transition-all btn-shadow"
+            class="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-5 bg-brand-blue/90 border border-white/20 text-white rounded-lg font-bold text-lg hover:bg-brand-blue transition-all btn-shadow"
             href="https://api.whatsapp.com/send/?phone=51946363540&text&type=phone_number&app_absent=0"
           >
             <svg
@@ -191,7 +220,7 @@ import Layout from "../layouts/Layout.astro";
             Contáctanos
           </a>
           <a
-            class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-8 py-5 bg-brand-blue/90 border border-white/20 text-white rounded-lg font-bold text-lg hover:bg-brand-blue transition-all btn-shadow"
+            class="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-5 bg-brand-blue/90 border border-white/20 text-white rounded-lg font-bold text-lg hover:bg-brand-blue transition-all btn-shadow"
             href="https://funvalinternacional-org.zoom.us/j/89951683933#success"
           >
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -302,7 +331,7 @@ import Layout from "../layouts/Layout.astro";
             class="text-4xl md:text-5xl font-display font-extrabold text-slate-900 dark:text-white mb-4"
             data-aos="fade-up"
           >
-            Catálogo de Carreras
+            Nuestras carreras
           </h2>
           <p
             class="text-slate-600 dark:text-slate-400 max-w-2xl text-lg"
@@ -452,13 +481,13 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div class="mt-12 text-center md:hidden">
-        <a
+        <!-- <a
           class="inline-flex items-center gap-2 bg-primary text-brand-dark px-8 py-4 rounded-lg font-extrabold btn-shadow"
           href="#"
         >
           VER CATÁLOGO
           <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
+        </a> -->
       </div>
     </div>
   </section>
@@ -648,7 +677,7 @@ import Layout from "../layouts/Layout.astro";
   <section class="py-24 bg-slate-50 dark:bg-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
-        class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+        class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6 text-center md:text-left"
       >
         <div>
           <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
@@ -826,16 +855,12 @@ import Layout from "../layouts/Layout.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         <!-- Col 1: Brand -->
         <div class="space-y-4">
-          <div class="flex items-center gap-3">
-            <div
-              class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
-            >
-              <span class="text-brand-blue font-bold text-xl">F</span>
-            </div>
-            <span
-              class="text-2xl font-display font-extrabold tracking-tighter uppercase"
-              >Funval</span
-            >
+          <div class="flex items-center gap-2 mb-4">
+            <img
+              class="h-12 w-auto object-contain rounded-lg"
+              src="/images/funval/Azul_logo.png"
+              alt="Funval Logo Dark Mode"
+            />
           </div>
           <p class="text-slate-400 text-sm leading-relaxed">
             Transformando el futuro a través de educación técnica de excelencia
@@ -896,15 +921,12 @@ import Layout from "../layouts/Layout.astro";
             </li>
           </ul>
         </div>
-
-        <!-- Col 4: Social -->
         <div>
           <h3 class="text-lg font-bold mb-4 text-white">Síguenos</h3>
           <p class="text-slate-400 mb-4 text-sm">
             Mantente conectado con nuestra comunidad.
           </p>
           <div class="flex gap-4">
-            <!-- Facebook -->
             <a
               href="https://www.facebook.com/fundet"
               class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-all text-slate-400"
@@ -915,7 +937,6 @@ import Layout from "../layouts/Layout.astro";
                 ></path>
               </svg>
             </a>
-            <!-- Instagram -->
             <a
               href="https://www.instagram.com/funvalinternacional/"
               class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-all text-slate-400"
@@ -926,7 +947,6 @@ import Layout from "../layouts/Layout.astro";
                 ></path>
               </svg>
             </a>
-            <!-- LinkedIn -->
             <a
               href="https://www.linkedin.com/company/fundet-funval/"
               class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-all text-slate-400"
@@ -937,7 +957,6 @@ import Layout from "../layouts/Layout.astro";
                 ></path>
               </svg>
             </a>
-            <!-- YouTube -->
             <a
               href="https://www.youtube.com/watch?v=JTLAl36NGf0"
               class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-all text-slate-400"
@@ -980,6 +999,16 @@ import Layout from "../layouts/Layout.astro";
         }
       });
     });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
 
     import AOS from "aos";
     import "aos/dist/aos.css";
