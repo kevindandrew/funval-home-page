@@ -10,10 +10,10 @@ const {
   title,
   description,
   image = "/images/funval/Sinfondo.png",
-  canonicalURL = Astro.url,
+  canonicalURL = new URL(Astro.url.pathname, Astro.site),
 } = Astro.props;
 
-const resolvedImage = new URL(image, Astro.url);
+const resolvedImage = new URL(image, Astro.site);
 ---
 
 <!-- Global Metadata -->
