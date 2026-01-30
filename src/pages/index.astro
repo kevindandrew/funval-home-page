@@ -2,7 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="FUNVAL - Cambiando Vidas">
+<Layout
+  title="FUNVAL - Cambiando Vidas"
+  description="Preparamos técnicos con integridad y valores para que brinden un servicio increíble. Cursos de programación, inglés, mecánica y más."
+  image="/images/funval/Sinfondo.png"
+>
   <nav
     class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800 transition-all font-sans"
   >
@@ -13,12 +17,12 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex justify-between items-center text-sm">
           <div class="flex items-center gap-2">
             <img
-              class="h-12 w-auto object-contain dark:hidden"
+              class="h-20 w-auto object-contain dark:hidden"
               src="/images/funval/Sinfondo.png"
               alt="Funval Logo"
             />
             <img
-              class="h-12 w-auto object-contain hidden dark:block rounded-lg"
+              class="h-20 w-auto object-contain hidden dark:block rounded-lg"
               src="/images/funval/Azul_logo.png"
               alt="Funval Logo Dark Mode"
             />
@@ -72,30 +76,22 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
+        <div class="flex justify-between items-center h-28">
           <div class="hidden md:flex items-center space-x-8">
             <a
-              class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors text-slate-700 dark:text-slate-200"
+              class="text-lg font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors text-slate-700 dark:text-slate-200"
               href="#">Inicio</a
             >
             <a
-              class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors text-slate-700 dark:text-slate-200"
-              href="https://www.estudiantefunval.org/">Área Técnica</a
-            >
-            <a
-              class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors text-slate-700 dark:text-slate-200"
-              href="https://www.estudiantefunval.org/">Área de Inglés</a
-            >
-            <a
-              class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors text-slate-700 dark:text-slate-200"
-              href="https://www.estudiantefunval.org/">Área de Programación</a
+              class="text-lg font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors text-slate-700 dark:text-slate-200"
+              href="https://www.estudiantefunval.org/">Plataforma estudiantes</a
             >
           </div>
 
           <div class="flex items-center gap-4">
             <a href="https://funvalinternacional.org/preinscription-reference">
               <button
-                class="bg-brand-blue text-white px-8 py-3 rounded-none text-sm font-bold hover:bg-opacity-90 btn-shadow uppercase"
+                class="bg-brand-blue text-white px-8 py-3 rounded-none text-base font-bold hover:bg-opacity-90 btn-shadow uppercase"
               >
                 Preinscríbete Aqui
               </button>
@@ -137,17 +133,7 @@ import Layout from "../layouts/Layout.astro";
           <a
             href="https://www.estudiantefunval.org/"
             class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
-            >Área Técnica</a
-          >
-          <a
-            href="https://www.estudiantefunval.org/"
-            class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
-            >Área de Inglés</a
-          >
-          <a
-            href="https://www.estudiantefunval.org/"
-            class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
-            >Área de Programación</a
+            >Plataforma estudiantes</a
           >
         </div>
       </div>
@@ -178,8 +164,8 @@ import Layout from "../layouts/Layout.astro";
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        Transformamos el futuro a través de la educación técnica de calidad y
-        oportunidades reales de inserción laboral.
+        Preparamos técnicos con integridad y valores para que brinden un
+        servicio increíble.
       </p>
       <div
         class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
@@ -498,40 +484,194 @@ import Layout from "../layouts/Layout.astro";
       <span class="material-symbols-outlined text-[400px]">info</span>
     </div>
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
-      <span
-        class="block text-blue-200 font-bold tracking-widest uppercase mb-2"
-        data-aos="fade-up">Información virtual</span
-      >
       <h2
-        class="text-3xl md:text-5xl font-display font-extrabold mb-6"
+        class="text-3xl md:text-5xl font-display font-extrabold mb-4"
         data-aos="fade-up"
       >
-        Charlas Informativas
+        Charlas informativas
       </h2>
-      <div
-        class="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-normal space-y-4"
+      <p
+        class="text-xl md:text-2xl text-blue-100 mb-2 font-medium"
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        <p>
-          Te invitamos a participar en nuestras reuniones semanales, las cuales
-          se llevan a cabo en los siguientes horarios:
-        </p>
-        <p class="font-bold text-white text-2xl">
-          Lunes a Viernes 3:00 PM (hora de Guatemala)
-        </p>
-        <p>
-          Es una excelente oportunidad para saber de nuestras carreras, resolver
-          dudas y como aplicar a Funval.
-        </p>
-        <p>¿Cómo unirte? Simplemente haz clic en el siguiente botón.</p>
-        <p class="font-bold">¡Esperamos verte en una de nuestras sesiones!</p>
+        Dirigida a: postulantes, familiares, líderes y empresarios.
+      </p>
+
+      <div
+        class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm max-w-2xl mx-auto mb-10 mt-8"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <h3
+          class="text-2xl font-bold mb-6 border-b border-white/20 pb-4 inline-block"
+        >
+          Lunes a viernes
+        </h3>
+
+        <div class="space-y-6">
+          <!-- 08:00 AM -->
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+          >
+            <div class="flex gap-2">
+              <img
+                src="https://flagcdn.com/24x18/gt.png"
+                alt="Guatemala"
+                title="Guatemala"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/hn.png"
+                alt="Honduras"
+                title="Honduras"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/cr.png"
+                alt="Costa Rica"
+                title="Costa Rica"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/ni.png"
+                alt="Nicaragua"
+                title="Nicaragua"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/sv.png"
+                alt="El Salvador"
+                title="El Salvador"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/mx.png"
+                alt="México"
+                title="México"
+                class="rounded shadow-sm scale-125"
+              />
+            </div>
+            <span class="text-3xl font-extrabold font-display">08:00 AM</span>
+          </div>
+
+          <!-- 09:00 AM -->
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+          >
+            <div class="flex gap-2">
+              <img
+                src="https://flagcdn.com/24x18/co.png"
+                alt="Colombia"
+                title="Colombia"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/ec.png"
+                alt="Ecuador"
+                title="Ecuador"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/pe.png"
+                alt="Perú"
+                title="Perú"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/pa.png"
+                alt="Panamá"
+                title="Panamá"
+                class="rounded shadow-sm scale-125"
+              />
+            </div>
+            <span class="text-3xl font-extrabold font-display">09:00 AM</span>
+          </div>
+
+          <!-- 10:00 AM -->
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+          >
+            <div class="flex gap-2">
+              <img
+                src="https://flagcdn.com/24x18/bo.png"
+                alt="Bolivia"
+                title="Bolivia"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/ve.png"
+                alt="Venezuela"
+                title="Venezuela"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/do.png"
+                alt="República Dominicana"
+                title="República Dominicana"
+                class="rounded shadow-sm scale-125"
+              />
+            </div>
+            <span class="text-3xl font-extrabold font-display">10:00 AM</span>
+          </div>
+
+          <!-- 11:00 AM -->
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+          >
+            <div class="flex gap-2">
+              <img
+                src="https://flagcdn.com/24x18/ar.png"
+                alt="Argentina"
+                title="Argentina"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/br.png"
+                alt="Brasil"
+                title="Brasil"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/cl.png"
+                alt="Chile"
+                title="Chile"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/uy.png"
+                alt="Uruguay"
+                title="Uruguay"
+                class="rounded shadow-sm scale-125"
+              />
+              <img
+                src="https://flagcdn.com/24x18/py.png"
+                alt="Paraguay"
+                title="Paraguay"
+                class="rounded shadow-sm scale-125"
+              />
+            </div>
+            <span class="text-3xl font-extrabold font-display">11:00 AM</span>
+          </div>
+        </div>
       </div>
+
+      <div
+        class="max-w-2xl mx-auto mb-10"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <p class="text-lg md:text-xl text-blue-100 font-normal leading-relaxed">
+          Conoce más de nosotros, fechas de inicio, modalidad, opciones de
+          cursos y opciones laborales.
+        </p>
+      </div>
+
       <a
-        class="inline-block bg-[#60a5fa] hover:bg-white hover:text-brand-blue px-12 py-5 rounded-lg font-extrabold text-lg transition-all btn-shadow uppercase"
+        class="inline-block bg-[#60a5fa] hover:bg-white hover:text-brand-blue px-12 py-5 rounded-lg font-extrabold text-lg transition-all btn-shadow uppercase transform hover:scale-105"
         href="https://funvalinternacional-org.zoom.us/j/89951683933#success"
         data-aos="fade-up"
-        data-aos-delay="200"
+        data-aos-delay="400"
       >
         INGRESA A LA REUNION
       </a>
@@ -554,11 +694,11 @@ import Layout from "../layouts/Layout.astro";
           >
             <span
               class="material-symbols-outlined text-brand-blue dark:text-blue-400"
-              >school</span
+              >work</span
             >
           </div>
           <p class="text-lg font-medium text-slate-700 dark:text-slate-200">
-            Deseo de Estudiar
+            Necesidad de un empleo formal
           </p>
         </div>
         <div
@@ -575,7 +715,7 @@ import Layout from "../layouts/Layout.astro";
             >
           </div>
           <p class="text-lg font-medium text-slate-700 dark:text-slate-200">
-            Contar con Tiempo Disponible
+            Disponibilidad para estudiar de manera intensiva
           </p>
         </div>
         <div
@@ -588,11 +728,11 @@ import Layout from "../layouts/Layout.astro";
           >
             <span
               class="material-symbols-outlined text-orange-600 dark:text-orange-400"
-              >laptop</span
+              >videocam</span
             >
           </div>
           <p class="text-lg font-medium text-slate-700 dark:text-slate-200">
-            Dispositivo Básico para conectarse
+            Internet y dispositivo con Zoom
           </p>
         </div>
         <div
@@ -605,11 +745,11 @@ import Layout from "../layouts/Layout.astro";
           >
             <span
               class="material-symbols-outlined text-green-600 dark:text-green-400"
-              >assignment_turned_in</span
+              >calendar_month</span
             >
           </div>
           <p class="text-lg font-medium text-slate-700 dark:text-slate-200">
-            Cumplir los requisitos adjuntos en el formulario de preinscripción
+            Edad según la carrera que elija
           </p>
         </div>
       </div>
@@ -697,9 +837,7 @@ import Layout from "../layouts/Layout.astro";
         </a> -->
       </div>
 
-      <div
-        class="flex flex-wrap justify-between items-center gap-8 md:gap-12 grayscale hover:grayscale-0 transition-all duration-500"
-      >
+      <div class="flex flex-wrap justify-between items-center gap-8 md:gap-12">
         <div class="w-24 md:w-32 h-20 flex items-center justify-center p-2">
           <img
             src="/logos/teleperformance.png"
@@ -850,7 +988,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-  <footer class="bg-brand-dark pt-16 pb-8 text-white border-t border-slate-800">
+  <footer class="bg-slate-900 pt-16 pb-8 text-white border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         <!-- Col 1: Brand -->

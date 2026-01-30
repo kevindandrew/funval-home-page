@@ -3,72 +3,70 @@ import Layout from "../layouts/Layout.astro";
 import { courses } from "../data/courses";
 ---
 
-<Layout title="Cursos">
+<Layout
+  title="Catálogo de Cursos - Funval International"
+  description="Explora nuestra oferta académica diseñada con los más altos estándares para prepararte para los retos del mercado laboral global."
+>
   <body
     class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300"
   >
-    <!-- ... same nav ... -->
     <nav
-    class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800 transition-all"
-  >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16 sm:h-20">
-        <div class="flex items-center gap-2">
-          <div
-            class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center"
-          >
-            <span class="text-white font-bold text-xl">F</span>
+      class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800 transition-all"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 sm:h-20">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-xl">F</span>
+            </div>
+            <span
+              class="text-2xl font-display font-extrabold tracking-tighter text-brand-blue dark:text-white uppercase"
+              >Funval</span
+            >
           </div>
-          <span
-            class="text-2xl font-display font-extrabold tracking-tighter text-brand-blue dark:text-white uppercase"
-            >Funval</span
-          >
-        </div>
-        <div class="hidden md:flex items-center space-x-8">
-          <a
-            class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors"
-            href="/"
-            >Inicio</a
-          >
-          <a
-            class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors"
-            href="/courses"
-            >Catálogo</a
-          >
-          <a
-            class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors"
-            href="#"
-            >Certificaciones</a
-          >
-          <button
-            class="bg-brand-blue text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-opacity-90 btn-shadow"
-          >
-            Inscríbete
-          </button>
-          <button
-            class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
-            onclick="document.documentElement.classList.toggle('dark')"
-          >
-            <span class="material-symbols-outlined align-middle icon-moon"
-              >dark_mode</span
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors"
+              href="/">Inicio</a
             >
-            <span
-              class="material-symbols-outlined align-middle icon-sun"
-              >light_mode</span
+            <a
+              class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors"
+              href="/courses">Catálogo</a
             >
-          </button>
-        </div>
-        <div class="md:hidden flex items-center gap-4">
-          <button class="p-2">
-            <span
-              class="material-symbols-outlined text-slate-600 dark:text-slate-300"
-              >menu</span
+            <a
+              class="text-sm font-semibold hover:text-brand-blue dark:hover:text-primary transition-colors"
+              href="#">Certificaciones</a
             >
-          </button>
+            <button
+              class="bg-brand-blue text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-opacity-90 btn-shadow"
+            >
+              Inscríbete
+            </button>
+            <button
+              class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+              onclick="document.documentElement.classList.toggle('dark')"
+            >
+              <span class="material-symbols-outlined align-middle icon-moon"
+                >dark_mode</span
+              >
+              <span class="material-symbols-outlined align-middle icon-sun"
+                >light_mode</span
+              >
+            </button>
+          </div>
+          <div class="md:hidden flex items-center gap-4">
+            <button class="p-2">
+              <span
+                class="material-symbols-outlined text-slate-600 dark:text-slate-300"
+                >menu</span
+              >
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
     <main class="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12 text-center md:text-left">
         <h1
